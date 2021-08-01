@@ -80,6 +80,7 @@ padding-left:20px;}
 align-items: center;}
 .title__highlight{height: 40px;}
 .title__text{
+    font-family: TTLakes-Bold;
     font-style:normal;
     font-weight: normal;
 
@@ -88,11 +89,6 @@ align-items: center;}
 
 
     margin-left: 16px;}
-
-.title__text{
-    font-family: TTLakes-Bold;
-}
-
 .title__only1120_repair{display: none;}
 .main__only1120_check{display: none;}
 
@@ -318,19 +314,19 @@ align-items: center;}
     .nav__button2 {
         width: 240px;
         height: 40px;
-        padding-left: 0;
+        padding-left: 0px;
     }
 
     .nav__button4 {
         width: 124px;
         height: 40px;
-        padding-left: 0;
+        padding-left: 0px;
     }
 
     .nav__button6 {
         width: 216px;
         height: 40px;
-        padding-left: 0;
+        padding-left: 0px;
     }
 
     .nav__button7 {
@@ -412,7 +408,7 @@ align-items: center;}
         width: 490px;
         height: 160px;
     }
-    .first-block__text1120px{display: inline;}
+    .first-block__text1120px{display: inline-block;}
     .first-block__image {
         width: 531px;
         height: 383px;
