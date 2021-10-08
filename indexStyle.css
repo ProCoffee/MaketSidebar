@@ -28,13 +28,10 @@ body{padding: 0;
     font-style: normal;
     font-weight: normal ;
 }
-
-
-.nav button:hover {
+.nav button:hover {margin-top: 0;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
-background-color: #FFFFFF;
-}
+background-color: #FFFFFF;}
 button:hover{cursor: pointer;}
 label{display: flex;
 align-items: center;}
@@ -163,7 +160,6 @@ label:hover{cursor: pointer;}
         align-items: flex-start;
         background-color: #F8F8F8;
         width: 100%;
-        margin: 0 auto;
     }
 
     .title {
@@ -230,9 +226,6 @@ label:hover{cursor: pointer;}
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        padding-right: 0;
-        padding-top: 0;
-        padding-bottom: 0;
         padding-left: 0;
         margin-right: 20px;
         flex-shrink: 0;
@@ -269,6 +262,11 @@ label:hover{cursor: pointer;}
         font-family: "TTLakes-Regular";
         font-style: normal;
         font-weight: normal;
+
+
+
+
+
         Letter-spacing: 0.2px;
 
     }
@@ -397,8 +395,6 @@ label:hover{cursor: pointer;}
         .main__container {
             display: flex;
             width: 100%;
-            margin: 0 auto;
-
         }
 
         .header__container {
