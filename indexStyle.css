@@ -453,9 +453,9 @@ label:hover{cursor: pointer;}
             display: flex;
             width: 100%;
 
-            -ms-overflow-x: scroll;
+            -ms-overflow-x: hidden;
 
-            overflow-x: scroll;
+            overflow-x: hidden;
 
 
 
@@ -471,6 +471,7 @@ label:hover{cursor: pointer;}
             flex-wrap: nowrap;}
 
     .nav__button:nth-child(3){display: none;}
+    .nav__button{border: 2px solid transparent;}
 
 
 
