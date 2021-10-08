@@ -319,6 +319,7 @@ label:hover{cursor: pointer;}
     .first-block__image {
         margin-top: 16px;
         width: 100%;
+        max-width: 530px;
         border-radius: 6px;
     }
     .first-block__picture{border-radius: 6px;
@@ -451,7 +452,15 @@ label:hover{cursor: pointer;}
         .nav__container {
             display: flex;
             width: 100%;
+            -moz-overflow-x: scroll;
+            -webkit-overflow-x: scroll;
+            -ms-overflow-x: scroll;
+            -o-overflow-x: scroll;
             overflow-x: scroll;
+
+
+
+
             align-items: center;
 
 
