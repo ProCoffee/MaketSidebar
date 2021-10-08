@@ -460,10 +460,9 @@ label:hover{cursor: pointer;}
         .nav__container_size {
             display: flex;
             width: 100%;
-            flex-wrap: nowrap;
+            flex-wrap: nowrap;}
 
-
-        }
+    .nav__button:nth-child(3){display: none;}
 
 
 
