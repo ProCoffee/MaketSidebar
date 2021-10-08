@@ -28,10 +28,13 @@ body{padding: 0;
     font-style: normal;
     font-weight: normal ;
 }
-.nav button:hover {margin-top: 0px;
+
+
+.nav button:hover {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
-background-color: #FFFFFF;}
+background-color: #FFFFFF;
+}
 button:hover{cursor: pointer;}
 label{display: flex;
 align-items: center;}
@@ -49,20 +52,31 @@ label:hover{cursor: pointer;}
 
     .header__container {
         display: flex;
-        width: 100%;
         flex-direction: row;
-        justify-content: space-evenly;
+        flex-wrap: nowrap;
+
         align-items: center;
     }
 
+    .header__part--left{display: inline-flex;
+
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 24px;}
+
+    .header__part--right {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 24px;
+    }
+
     .header__burger {
-        border: none;
-        background-color: #FFF;
-        width: 40px;
-        height: 40px;
-        margin-left: 16px;
+
     }
     .header__menu_button{
+        margin: 24px 20px 24px 0;
         width: 40px;
     height: 40px;
     display: inline;
@@ -75,7 +89,11 @@ label:hover{cursor: pointer;}
 .header__devider_planshet{display: none;}
 .header__devider1 {width: 2px;
     height: 32px;
+
     display: inline;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-right: 28px;
     background-image: url(divider.svg);
     background-repeat: no-repeat;
     border: none;
@@ -85,13 +103,16 @@ label:hover{cursor: pointer;}
 .header__logo{width: 98px;
     height: 52px;
     display: inline;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    margin-right: 17px;
     background-image: url(Group.svg);
     background-repeat: no-repeat;
     border: none;
     background-color: #FFF;}
 .header__button_profile{display: none;}
 
-    .header__button_repair {
+    .header__button--repair {
         width: 40px;
         height: 40px;
         display: inline;
@@ -99,25 +120,27 @@ label:hover{cursor: pointer;}
         background-repeat: no-repeat;
         border: none;
         background-color: #FFF;
+        margin-right: 16px;
+
     }
-    .header__button_checkstatus{width: 40px;
+    .header__button--checkstatus{width: 40px;
         height: 40px;
         display: inline;
         background-image: url(checkstatus.svg);
         background-repeat: no-repeat;
         border: none;
-        background-color: #FFF;}
+        background-color: #FFF;
+        margin-right: 16px;
+        }
 
-
-    .header__call{
+    .header__call--button{
+        display: none;
+    }
+    .header__chat--button {
         display: none;
     }
 
-    .header__chat {
-        display: none;
-    }
-
-    .header__profile {
+    .header__profile--button {
         display: none;
     }
 
@@ -140,6 +163,7 @@ label:hover{cursor: pointer;}
         align-items: flex-start;
         background-color: #F8F8F8;
         width: 100%;
+        margin: 0 auto;
     }
 
     .title {
@@ -166,7 +190,7 @@ label:hover{cursor: pointer;}
     flex-shrink: 0;}
 
     .title__text {
-        font-family: TTLakes-Bold;
+        font-family: "TTLakes-Bold", serif;
         font-style: normal;
         font-weight: normal;
 
@@ -206,14 +230,17 @@ label:hover{cursor: pointer;}
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        padding-left: 0px;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
         margin-right: 20px;
         flex-shrink: 0;
         border: none;
         background-color: #F8F8F8;
         font-size: 16px;
         line-height: 24px;
-        font-family: TTLakes-Medium;
+        font-family: "TTLakes-Medium", serif;
         font-style: normal;
         font-weight: normal;
     }
@@ -259,40 +286,27 @@ label:hover{cursor: pointer;}
     }
 
 
-    .first-block__icon {
-        width: 8px;
-        height: 10px;
-        margin-right: 8px;
-        margin-left: 6px;
-        margin-top: -8px;
-        border: none;
-        outline: none;
-        background-color: #F8F8F8;
-    }
+.first-block__button--readmore{
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    border: none;
+    background-color: #F8F8F8;
+    position: relative;
+    margin-left: 0;
+    flex-shrink: 0;
 
-    button.first-block__iconRM {
-        padding: 0;
-        border: none;
-        font: inherit;
-        color: inherit;
-        background-color: transparent;
-    }
 
-    .first-block__read-more-text {
-        display: flex;
-        flex-shrink: 0;
-        letter-spacing: -0.2px;
-        width: 100px;
-        max-height: 24px;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        font-family: TTLakes-Medium;
-        font-style: normal;
-        font-weight: 600;
-        margin-left: 16px;
-        font-size: 16px;
-    }
+}
+.first-block__button--readmore::before
+{content:"";
+    background-image: url("read-more-icon.png");
+    width: 8px;
+    height: 10px;
+    position: absolute;
+    left: -16px;
+
+}
 
 
     .first-block__mobile{margin-left: 16px; margin-right: 16px;}
@@ -328,9 +342,13 @@ label:hover{cursor: pointer;}
         }
         .header {
             display: flex;
-            width: 100%;
         }
-        .header__devider_planshet{
+        .header__container{display: flex;
+            max-width: 1120px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;}
+        .header__devider--planshet{
             width: 2px;
             height: 32px;
             display: inline;
@@ -339,21 +357,39 @@ label:hover{cursor: pointer;}
             border: none;
             background-color: #FFF;}
 
-        .header__call {
+        .header__call--button {
             display: inline;
-            margin-left: 231px;
+            margin-right: 16px;
+
         }
-        .header__chat {
+        .header__chat--button {
             display: inline;
+            margin-right: 16px;
         }
-        .header__chat_button{width: 40px;
+        .header__chat--button{width: 40px;
             height: 40px;
             display: inline;
             background-image: url(chat.png);
             background-repeat: no-repeat;
             border: none;
             background-color: #FFF;}
-        .main {
+        .header__profile--button{display: inline;
+        margin-right: 20px;}
+        .header__devider--planshet{display: inline;
+        margin-right: 20px;}
+
+    .header__button--repair{display: inline;
+    margin-right: 16px;}
+    .header__button--checkstatus{display: inline;
+        margin-right: 0;}
+
+
+
+
+
+
+
+    .main {
             display: flex;
             width: 100%;
         }
@@ -361,6 +397,8 @@ label:hover{cursor: pointer;}
         .main__container {
             display: flex;
             width: 100%;
+            margin: 0 auto;
+
         }
 
         .header__container {
@@ -380,13 +418,12 @@ label:hover{cursor: pointer;}
             margin-left: 24px;
         }
 
-        .header__devider-planshet {
+        .header__devider--planshet {
             display: inline-block;
-            margin-right: 20px;
-            margin-left: 20px;
+
         }
-        .header__profile{display: inline;}
-        .header__button_profile{width: 40px;
+
+        .header__profile--button{width: 40px;
             height: 40px;
             display: inline;
             background-image: url(profile.png);
@@ -394,7 +431,7 @@ label:hover{cursor: pointer;}
             border: none;
             background-color: #FFF;}
         .header_call{display: inline;}
-        .header__call_button{
+        .header__call--button{
             width: 40px;
             height: 40px;
             display: inline;
