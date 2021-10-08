@@ -452,10 +452,9 @@ label:hover{cursor: pointer;}
         .nav__container {
             display: flex;
             width: 100%;
-            -moz-overflow-x: scroll;
-            -webkit-overflow-x: scroll;
+
             -ms-overflow-x: scroll;
-            -o-overflow-x: scroll;
+
             overflow-x: scroll;
 
 
