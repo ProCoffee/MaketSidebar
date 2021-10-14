@@ -455,18 +455,9 @@ label:hover{cursor: pointer;}
         .nav__container {
             display: flex;
             width: 100%;
-
-            -ms-overflow-x: hidden;
-
-            overflow-x: hidden;
-
-
-
-
             align-items: center;
-
-
         }
+        .nav__container::-webkit-scrollbar{width: 0;}
 
         .nav__container_size {
             display: flex;
