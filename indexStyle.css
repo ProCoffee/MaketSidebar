@@ -215,13 +215,14 @@ label:hover{cursor: pointer;}
         width: 100%;
         overflow-x: scroll;
     }
+.nav__container::-webkit-scrollbar{width: 0;}
 
     .nav__container_size {
         width: 100%;
         margin-left: 16px;
         margin-top: 24px;
     }
-    .nav::-webkit-scrollbar{width: 0;}
+
     .nav__button {
         display: flex;
         justify-content: center;
