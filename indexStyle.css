@@ -178,8 +178,9 @@ a:hover{text-decoration: none;
         font-style: normal;
         font-weight: normal;
         Letter-spacing: 0.2px;
-
-
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-bottom: 13px ;
     }
 
 
@@ -193,7 +194,16 @@ a:hover{text-decoration: none;
     .description__text_desktop {
         display: none;
     }
-.description__button{margin-left: 16px;}
+.description__button{
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    border: none;
+    background-color: #F8F8F8;
+    position: relative;
+    margin-left: 21px;
+    flex-shrink: 0;
+}
 .description__button::before
 {content:"";
     background-image: url("read-more-icon.png");
@@ -203,7 +213,6 @@ a:hover{text-decoration: none;
     left: -16px;
 
 }
-
     .description__image {
         width: 100%;
         display: flex;
@@ -317,7 +326,8 @@ a:hover{text-decoration: none;
         border: none;
         background-color: #F8F8F8;
         position: relative;
-        margin-right: 16px;
+        margin-left: 21px;
+        flex-shrink: 0;
     }
     .description__button::before
     {content:"";
@@ -325,6 +335,8 @@ a:hover{text-decoration: none;
         width: 8px;
         height: 10px;
         position: absolute;
+        left: -16px;
+
     }
     .description__image {display: flex;
         width: 100%;
