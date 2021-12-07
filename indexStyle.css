@@ -176,7 +176,7 @@ a:hover{text-decoration: none;
     }
 
 
-.description__text {
+.description__text{
         width: 100%;
         font-size: 14px;
         font-family: "TTLakes-Regular";
@@ -185,30 +185,9 @@ a:hover{text-decoration: none;
         Letter-spacing: 0.2px;
 
     }
-.description__read-more {
-        display: flex;
-        flex-shrink: 0;
-        margin-top: 20px;
-        margin-left: 33px;
-        width: 100px;
-        height: 24px;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-.description__button--readmore{
-    display: flex;
-    align-items: center;
-    margin-top: 17px;
-    border: none;
-    background-color: #F8F8F8;
-    position: relative;
-    margin-left: 0;
-    flex-shrink: 0;
 
 
-}
-.description__button--readmore::before
+.description__button::before
 {content:"";
     background-image: url("read-more-icon.png");
     width: 8px;
@@ -219,12 +198,12 @@ a:hover{text-decoration: none;
 }
 
 
-    .description__mobile{margin-left: 16px; margin-right: 16px;}
-    .description__tablet {
+    .description__text_mobile{margin-left: 16px; margin-right: 16px;}
+    .description__text_tablet {
         display: none;
     }
 
-    .description__desktop {
+    .description__text_desktop {
         display: none;
     }
 
@@ -316,21 +295,21 @@ a:hover{text-decoration: none;
     .description__text {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            padding:
+
         }
     .description__tablet{
-            display: block;
+            display: inline-block;
             font-family: "TTLakes-Regular";
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
-            margin-top: 16px;
-            margin-left: 16px;
-            margin-right: 16px;
+
+
         }
-    .description__desktop {
+    .description__text_desktop {
             display: none;}
-    .description__button--readmore{
+    .description__button{
         display: flex;
         align-items: center;
         margin-top: 17px;
@@ -339,7 +318,7 @@ a:hover{text-decoration: none;
         position: relative;
         margin-right: 16px;
     }
-    .description__button--readmore::before
+    .description__button::before
     {content:"";
         background-image: url("read-more-icon.png");
         width: 8px;
@@ -404,30 +383,23 @@ a:hover{text-decoration: none;
             flex-shrink: 0;
             flex-wrap: nowrap;
         }
-        .description__conteiner {
+
+        .description {}
+        .description__conteiner {display: flex;
             width: 100%;
         }
-        .description {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        .description__not-image {
-            display: flex;
-            flex-direction: column;
+
+        .description__text {display: inline-block;
             width: 95%;
         }
-        .description__text {
-            width: 95%;
+        .description__text_mobile{width: 100%;}
+        .description__text_tablet {width: 100%;
         }
-        .description__mobile{margin-left: 32px; width: 100%;}
-        .description__tablet {margin-left: 32px; width: 100%;
-        }
-        .description__desktop {
+        .description__text_desktop {
             display: inline;
         }
-        .description__read-more{margin-left: 34px;}
-        .description__button--readmore{
+
+        .description__button{
             display: flex;
             align-items: center;
             margin-top: 17px;
@@ -437,7 +409,7 @@ a:hover{text-decoration: none;
             margin-left: 21px;
             flex-shrink: 0;
         }
-        .description__button--readmore::before
+        .description__button::before
         {content:"";
         background-image: url("read-more-icon.png");
         width: 8px;
