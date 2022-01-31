@@ -146,7 +146,7 @@ a:hover{text-decoration: none;
     }
 .nav__container::-webkit-scrollbar{width: 0;}
 
-
+.nav__list{}
 .nav__item {
         display: flex;
         justify-content: center;
@@ -156,14 +156,14 @@ a:hover{text-decoration: none;
         border: 2px solid transparent;
         margin-right: 0;
         flex-shrink: 0;
+
         background-color: #F8F8F8;
         font-size: 16px;
         line-height: 24px;
         font-family: "TTLakes-Medium", serif;
         font-style: normal;
         font-weight: normal;
-
-    }
+}
 .description {}
 .description__container {
         width: 100%;
