@@ -1,82 +1,58 @@
-<!DOCTYPE HTML>
-<html lang="ru" >
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Verstka</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="indexStyle.css">
-    <link rel="stylesheet" href="https://webfonts.pro/base-web-fonts/sans-serif-grotesque/897-tt-lakes.html">
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width= device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="sidebar-scc.css">
+    <title>sidebar</title>
 </head>
 <body>
 <header class="header">
     <div class="header__container">
         <div class="header__part">
-            <button class="header__btn"><img src="menu.svg" alt="меню"></button>
-            <div class="header__devider"><img src="divider.svg" alt="верт. черточка"></div>
+            <button class="header__btn"><img src="close.svg" alt="меню"></button>
             <a href="/" class="header__logo"><img src="Group.svg" alt="логотип"></a>
         </div>
         <div class="header__part">
-            <button class="header__btn header__tablet"><img src="call.svg" alt="трубка" class="header__image"></button>
-            <button class="header__btn header__tablet"><img src="chat.svg" alt="значок чата" class="header__image"></button>
-            <button class="header__btn header__tablet"><img src="profile.svg" alt="профиль" class="header__image"></button>
-            <div class="header__devider--tablet"></div>
-            <button class="header__btn"><img src="repair.svg" alt="значок инструменты"></button>
-            <button class="header__btn"><img src="icon.svg" alt="проверка статуса"></button>
+            <button class="header__btn"><img src="icon.svg" alt="проверка статус"></button>
         </div>
     </div>
 </header>
-<main class="main">
-    <div class="main__container">
-        <div class="title">
-            <div class="title__container">
-                <div class="title__block">
-
-                    <div class="title__text">Услуги и сервисы</div>
-                </div>
-                <div class="title__block">
-                   <label class="title__label">Оставить заявку<button class="header__btn"><img src="repair.svg" alt="значок ремонта"></button></label>
-                   <label class="title__label">Статус ремонта<button class="header__btn"><img src="checkstatus.svg" alt="проверка статуса"></button></label>
-               </div>
-            </div>
-        </div>
-        <nav class="nav">
-            <ul class="nav__container">
-                <li class="nav__item"><a href="/">Ремонтируемые бренды</a></li>
-                <li class="nav__item"><a href="/">Ремонтируемые устройства</a></li>
-                <li class="nav__item"><a href="/">Дополнительные услуги</a></li>
-                <li class="nav__item"><a href="/">Цены на услуги</a></li>
-                <li class="nav__item"><a href="/">Специальные цены</a></li>
-                <li class="nav__item"><a href="/">Адреса сервисных центров</a></li>
-                <li class="nav__item"><a href="/">Отзывы</a></li>
-            </ul>
-        </nav>
-        <div class="description">
-            <div class="description__container">
-
-                    <div class="description__text">
-                            <p class="description__text_mobile">Мы являемся авторизованным сервисным центром по ремонту
-                            техники Dell.
-                            Только у нас вы можете отремонтировать свой ноутбук Dell
-                            с официальной гарантией производителя.
-                            </p>
-                            <p class="description__text_tablet">
-                                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
-                            <span class="description__text_desktop">что подтверждает большое количество постоянных клиентов.Мы гордимся тем,
-                                    что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                                </span>
-                        </p>
-                        <button class="description__button">
-                        Читать далеее
-                        </button>
-                        </div>
-
-
-
-
-                <div class="description__image"> <img src="picture.jpg" class="description__picture" alt="Картинка"> </div>
-            </div>
-        </div>
+<div class="title">
+    <div class="title__container">
+        <div class="title__text">Ремонт техники</div>
     </div>
-</main>
+</div>
+<div class="nav">
+    <div class="nav__container">
+        <ul class="nav__list">
+            <li class="nav__item"> <a href="/">Услуги и сервисы</a></li>
+            <li class="nav__item"><a href="/">Корпоративным клиентам</a></li>
+            <li class="nav__item"><a href="/">Продавцам техники</a></li>
+            <li class="nav__item"><a href="/">Партнерам</a></li>
+            <li class="nav__item"><a href="/">Производителям</a></li>
+            <li class="nav__item"><a href="/">Наши сервисные центры</a></li>
+            <li class="nav__item"><a href="/">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__btns">
+            <button class="header__btn header__btn--footer"><img src="call.svg" alt="трубка"></button>
+            <button class="header__btn header__btn--footer"><img src="chat.svg" alt="значок чата"></button>
+            <button class="header__btn header__btn--footer"><img src="profile.svg" alt="профиль"></button>
+        </div>
+        <a href="/" class="footer__mail">mail@cps.com</a>
+        <a href="/" class="footer__phonenumber">88008908900</a>
+        <div class="footer__lang">
+            <button class="footer__langbtn">RU</button>
+            <button class="footer__langbtn">EN</button>
+            <button class="footer__langbtn">CH</button>
+        </div>
+
+    </div>
+</footer>
+
 </body>
 </html>
